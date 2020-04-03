@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Todcsw</title>
+  <title>圣文✔blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://todcsw.github.io/"/>
   <updated>2020-04-02T13:39:51.005Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://todcsw.github.io/</id>
   
   <author>
-    <name>陈圣文</name>
+    <name>Todcsw</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2020/04/02/hello-world/"/>
-    <id>http://yoursite.com/2020/04/02/hello-world/</id>
+    <link href="https://todcsw.github.io/2020/04/02/hello-world/"/>
+    <id>https://todcsw.github.io/2020/04/02/hello-world/</id>
     <published>2020-04-02T13:39:51.005Z</published>
     <updated>2020-04-02T13:39:51.005Z</updated>
     
