@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/music/index.html</loc>
+    
+    <lastmod>2020-04-03T03:48:24.303Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/movies/index.html</loc>
+    
+    <lastmod>2020-04-03T03:48:00.896Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/gallery/index.html</loc>
+    
+    <lastmod>2020-04-03T03:47:38.025Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2020-04-03T03:47:04.720Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2020-04-03T03:39:45.256Z</lastmod>
@@ -16,37 +44,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/gallery/index.html</loc>
-    
-    <lastmod>2020-04-03T02:56:41.571Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/movies/index.html</loc>
-    
-    <lastmod>2020-04-03T02:04:31.464Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/music/index.html</loc>
-    
-    <lastmod>2020-04-03T02:04:03.592Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2020-04-03T02:00:47.408Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2020-04-03T02:00:02.786Z</lastmod>
     
   </url>
   
