@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://todcsw.github.io/about/index.html</loc>
+    
+    <lastmod>2020-04-03T08:58:27.926Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://todcsw.github.io/link/index.html</loc>
     
     <lastmod>2020-04-03T08:41:39.806Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://todcsw.github.io/gallery/index.html</loc>
     
     <lastmod>2020-04-03T03:47:38.025Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://todcsw.github.io/about/index.html</loc>
-    
-    <lastmod>2020-04-03T03:47:04.720Z</lastmod>
     
   </url>
   
