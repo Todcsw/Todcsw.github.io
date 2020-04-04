@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://todcsw.github.io/gallery/index.html</loc>
+    
+    <lastmod>2020-04-04T00:13:09.252Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://todcsw.github.io/gallery/wallpaper/index.html</loc>
+    
+    <lastmod>2020-04-04T00:10:29.593Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://todcsw.github.io/about/index.html</loc>
     
-    <lastmod>2020-04-03T08:58:27.926Z</lastmod>
+    <lastmod>2020-04-03T23:46:39.877Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://todcsw.github.io/2020/04/03/%E4%BD%BF%E7%94%A8hexo-nodejs-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2020-04-03T23:41:56.224Z</lastmod>
     
   </url>
   
@@ -33,13 +54,6 @@
     <loc>https://todcsw.github.io/movies/index.html</loc>
     
     <lastmod>2020-04-03T03:48:00.896Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://todcsw.github.io/gallery/index.html</loc>
-    
-    <lastmod>2020-04-03T03:47:38.025Z</lastmod>
     
   </url>
   

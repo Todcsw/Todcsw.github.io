@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://todcsw.github.io/"/>
-  <updated>2020-04-02T13:39:51.005Z</updated>
+  <updated>2020-04-03T23:41:56.224Z</updated>
   <id>https://todcsw.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用hexo+nodejs+github搭建博客教程</title>
+    <link href="https://todcsw.github.io/2020/04/03/%E4%BD%BF%E7%94%A8hexo-nodejs-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
+    <id>https://todcsw.github.io/2020/04/03/%E4%BD%BF%E7%94%A8hexo-nodejs-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</id>
+    <published>2020-04-03T11:22:36.000Z</published>
+    <updated>2020-04-03T23:41:56.224Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我个人用了差不多一天的时间,搭建出来hexo+nodejs+github的个人博客网站,其中出现了无次数的错误和坑.但也在我的坚持下,不断的百度,思考和请教别人终于完成了。<br>其中也有过无次数的想放弃,但是我都坚持下来了。接下来为许多新手提供一个教程,不管你在后面遇到了什么困难都希望你能够坚持下来。</p><h1 id="安装相应软件"><a href="#安装相应软件" class="headerlink" title="安装相应软件"></a>安装相应软件</h1><h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>一  .Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。Git非常强大，我觉得建议每个人都去了解一下。<br>二  .windows:到git官网上下载, <a href="https://gitforwindows.org" target="_blank" rel="noopener">download git</a>,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git.<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">git教程</a><br>三  .安装好后，用git –version 来查看一下版本</p><h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><p>一  .Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。<br>二  .windows:<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">nodejs下载</a>选择LTS版本就行了。<br>三  .安装完后，打开命令行输入如下命令</p><pre><code>node -vnpm -v</code></pre><p>四  .检查一下有没有安装成功,顺便说一下，windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。<br>五  .配置一下环境变量,请查看目录2.3 的第八条内容</p><h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>一  .先创建一个文件夹blog，然后cd到这个文件夹下（或者在这个文件夹下直接右键git bash打开）。<br>二  .输入如下命令</p><pre><code>npm install -g hexo-cli</code></pre><p>三  .依旧用hexo -v查看一下版本,如果显示以下内容则代表成功。</p><p><img src="/" class="lazyload" data-src="/images/hexo%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.jpg"  alt=""></p><p>四  .如果上述不显示版本号则可能出现错误,按照以下内容配置</p><pre><code>npm config set prefix (设置全局目录)</code></pre><p>我输入到git中的命令如下:  因为我的blog是创建在d:\陈圣文\ 下的,所以设置如下这样.</p><pre><code>npm config set D:\陈圣文\blog</code></pre><p>并再次安装</p><pre><code>npm install -g hexo-cli</code></pre><p>完成后依旧用hexo -v查看一下版本<br>如果出现其他错误,请自行百度。<br>五  .接下来初始化一下hexo</p><pre><code>hexo init myblog</code></pre><p>六  .这个myblog可以自己取什么名字都行，myblog会生成在blog目录中</p><pre><code>cd myblog //进入这个myblog文件夹npm install</code></pre><p>七  .新建完成后，指定文件夹目录下有：</p><ul><li>node_modules: 依赖包</li><li>public：存放生成的页面</li><li>scaffolds：生成文章的一些模板</li><li>source：用来存放你的文章</li><li>themes：主题</li><li>_config.yml: 博客的配置文件**</li></ul><p>八  .设置如下系统环境变量<br><img src="/" class="lazyload" data-src="/images/%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.jpg"  alt=""><br>九  .输入如下命令</p><pre><code>hexo ghexo server</code></pre><p>十  .打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我个人用了差不多一天的时间,搭建出来hexo+nodejs+github的个人博客网站,其中出现了无次数的错误和坑.但也在我的坚持下,不断的
+      
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="https://todcsw.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="教程" scheme="https://todcsw.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
