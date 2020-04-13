@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://todcsw.github.io/"/>
-  <updated>2020-04-10T15:27:55.120Z</updated>
+  <updated>2020-04-13T12:43:14.679Z</updated>
   <id>https://todcsw.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>猜数游戏作业</title>
+    <link href="https://todcsw.github.io/2020/04/13/%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F/"/>
+    <id>https://todcsw.github.io/2020/04/13/%E7%8C%9C%E6%95%B0%E6%B8%B8%E6%88%8F/</id>
+    <published>2020-04-13T11:10:36.000Z</published>
+    <updated>2020-04-13T12:43:14.679Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="jsp的猜数游戏作业"><a href="#jsp的猜数游戏作业" class="headerlink" title="jsp的猜数游戏作业"></a>jsp的猜数游戏作业</h1><h2 id="guess1-jsp"><a href="#guess1-jsp" class="headerlink" title="guess1.jsp"></a>guess1.jsp</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;%@ page import&#x3D;&quot;java.util.Random&quot; %&gt;&lt;%--</span><br><span class="line">  Created by IntelliJ IDEA.</span><br><span class="line">  User: 行路</span><br><span class="line">  Date: 2020&#x2F;4&#x2F;13</span><br><span class="line">  Time: 19:06</span><br><span class="line">  To change this template use File | Settings | File Templates.</span><br><span class="line">--%&gt;</span><br><span class="line">&lt;%@ page contentType&#x3D;&quot;text&#x2F;html;charset&#x3D;UTF-8&quot; language&#x3D;&quot;java&quot; %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;guess1&lt;&#x2F;title&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;%</span><br><span class="line">    Random random&#x3D;new Random();</span><br><span class="line">   int  i &#x3D; random.nextInt(100) + 1;</span><br><span class="line">    session.setAttribute(&quot;rand&quot;,i);</span><br><span class="line">    int count&#x3D;0;</span><br><span class="line">    session.setAttribute(&quot;count&quot;,count);</span><br><span class="line">    long time &#x3D; System.currentTimeMillis();</span><br><span class="line">    session.setAttribute(&quot;time&quot;,time);</span><br><span class="line">    response.sendRedirect(&quot;Guess.jsp&quot;);</span><br><span class="line">%&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure><h2 id="Guess-jsp"><a href="#Guess-jsp" class="headerlink" title="Guess.jsp"></a>Guess.jsp</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;%@ page import&#x3D;&quot;java.util.Random&quot; %&gt;&lt;%--</span><br><span class="line">  Created by IntelliJ IDEA.</span><br><span class="line">  User: 行路</span><br><span class="line">  Date: 2020&#x2F;4&#x2F;13</span><br><span class="line">  Time: 18:47</span><br><span class="line">  To change this template use File | Settings | File Templates.</span><br><span class="line">--%&gt;</span><br><span class="line">&lt;%@ page contentType&#x3D;&quot;text&#x2F;html;charset&#x3D;UTF-8&quot; language&#x3D;&quot;java&quot; %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;猜数游戏&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;%</span><br><span class="line">    int i &#x3D; (int) session.getAttribute(&quot;rand&quot;);</span><br><span class="line">    int count &#x3D; (int) session.getAttribute(&quot;count&quot;);</span><br><span class="line">    long currentTimeMillis &#x3D; 0;</span><br><span class="line">    System.out.println(i);</span><br><span class="line">    if (request.getParameter(&quot;guess&quot;) !&#x3D; &quot;&quot; &amp;&amp; request.getParameter(&quot;guess&quot;) !&#x3D; null) &#123;</span><br><span class="line">        int guess &#x3D; Integer.parseInt(request.getParameter(&quot;guess&quot;));</span><br><span class="line">        if (guess &gt; i) &#123;</span><br><span class="line">            session.setAttribute(&quot;guess&quot;, &quot;猜大了&quot;);</span><br><span class="line">            count++;</span><br><span class="line">            session.setAttribute(&quot;count&quot;, count);</span><br><span class="line">        &#125; else if (guess &lt; i) &#123;</span><br><span class="line">            session.setAttribute(&quot;guess&quot;, &quot;猜的太小了&quot;);</span><br><span class="line">            count++;</span><br><span class="line">            session.setAttribute(&quot;count&quot;, count);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            session.setAttribute(&quot;guess&quot;, &quot;猜数正确&quot;);</span><br><span class="line">            currentTimeMillis &#x3D; System.currentTimeMillis();</span><br><span class="line">            count++;</span><br><span class="line">            session.setAttribute(&quot;count&quot;, count);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        session.setAttribute(&quot;guess&quot;, &quot;输入的数不能为空&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">%&gt;</span><br><span class="line">&lt;form action&#x3D;&quot;Guess.jsp&quot; method&#x3D;&quot;post&quot; &gt;</span><br><span class="line">    &lt;p&gt;&lt;%</span><br><span class="line">        if (session.getAttribute(&quot;guess&quot;) !&#x3D; null) &#123;</span><br><span class="line">            out.write(session.getAttribute(&quot;guess&quot;).toString());</span><br><span class="line">            if (session.getAttribute(&quot;guess&quot;).toString().equals(&quot;猜数正确&quot;)) &#123;</span><br><span class="line">                out.write(&quot;共猜了&quot; + (int) session.getAttribute(&quot;count&quot;) + &quot;次,耗时&quot; + (currentTimeMillis - (Long) session.getAttribute(&quot;time&quot;)) &#x2F; 1000 + &quot;秒&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    %&gt;</span><br><span class="line">    &lt;&#x2F;p&gt;</span><br><span class="line">    &lt;h2&gt;猜数游戏&lt;&#x2F;h2&gt;</span><br><span class="line">    &lt;p&gt;请输入1-100的数字&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;guess&quot;&#x2F;&gt;</span><br><span class="line">    &lt;%</span><br><span class="line">        if (session.getAttribute(&quot;guess&quot;) !&#x3D; null &amp;&amp; session.getAttribute(&quot;guess&quot;).toString().equals(&quot;猜数正确&quot;)) &#123;</span><br><span class="line">            session.removeAttribute(&quot;guess&quot;);</span><br><span class="line">    %&gt;</span><br><span class="line">    &lt;button type&#x3D;&quot;submit&quot; disabled&gt;提交&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;% &#125; else &#123;%&gt;</span><br><span class="line">    &lt;button type&#x3D;&quot;submit&quot;&gt;提交&lt;&#x2F;button&gt;</span><br><span class="line">    &lt;%&#125;%&gt;</span><br><span class="line">&lt;&#x2F;form&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;jsp的猜数游戏作业&quot;&gt;&lt;a href=&quot;#jsp的猜数游戏作业&quot; class=&quot;headerlink&quot; title=&quot;jsp的猜数游戏作业&quot;&gt;&lt;/a&gt;jsp的猜数游戏作业&lt;/h1&gt;&lt;h2 id=&quot;guess1-jsp&quot;&gt;&lt;a href=&quot;#guess1-jsp&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="作业" scheme="https://todcsw.github.io/categories/%E4%BD%9C%E4%B8%9A/"/>
+    
+    
+      <category term="作业" scheme="https://todcsw.github.io/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>稀疏数组和普通数组的转换</title>
