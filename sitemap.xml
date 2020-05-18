@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://todcsw.github.io/2020/04/07/mysql-mysql-StoredProcedure/</loc>
+    
+    <lastmod>2020-05-14T00:47:34.902Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://todcsw.github.io/2020/05/13/mysql-mysql-transaction/</loc>
     
     <lastmod>2020-05-13T06:17:49.055Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://todcsw.github.io/2020/05/12/mysql-mysql-event/</loc>
     
     <lastmod>2020-05-12T10:00:29.102Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://todcsw.github.io/2020/04/07/mysql-mysql-StoredProcedure/</loc>
-    
-    <lastmod>2020-05-12T08:45:20.828Z</lastmod>
     
   </url>
   
